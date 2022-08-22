@@ -49,10 +49,9 @@
                         <div class="align-self-center">
                             <h1 class="banner-heading">Choose Your Best Five Cricketers</h1>
                             <p class="banner-description mx-auto w-75">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-                                dolor corrupti eveniet error explicabo quaerat dolore sint alias
-                                architecto quasi. Quam corrupti esse aperiam laboriosam soluta odio,
-                                molestiae necessitatibus doloremque?
+                                Let's say you are going to build a cricket team. Already you have 6
+                                members. Now you can choose 5 players from our list. Choose you best
+                                five players and enjoy the game.
                             </p>
                         </div>
                         <div class="position-absolute text-end" style="bottom: 3%; right: 3%">
@@ -78,7 +77,7 @@
             <!-- selection card section -->
             <section class="container-xxl mt-5">
                 <div class="row">
-                    <div class="col-lg-9 row">
+                    <div class="col-lg-9 row" id="player-section">
                         <!-- player 1 -->
                         <div class="col-12 col-md-6 col-xl-4 g-3">
                             <div class="card text-center player-card p-0">
@@ -88,10 +87,12 @@
                                     class="card-img-top"
                                     alt=""
                                 />
-                                <div class="card-body text-white">
+                                <div class="card-body text-white" id="player1">
                                     <h5 class="card-title" id="player-name">Shakib Al Hasan</h5>
                                     <p class="card-text">1000 Runs <span> . </span> 30 Centuries</p>
-                                    <a href="#" class="btn px-5 py-2 w-75 select-btn">Select</a>
+                                    <button href="#" class="btn px-5 py-2 w-75 select-btn" id="">
+                                        Select
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +110,9 @@
                                     <p class="card-text">
                                         10000 Runs <span> . </span> 40 Centuries
                                     </p>
-                                    <a href="#" class="btn px-5 py-2 w-75 select-btn">Select</a>
+                                    <button href="#" class="btn px-5 py-2 w-75 select-btn" id="">
+                                        Select
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +130,9 @@
                                     <p class="card-text">
                                         20000 Runs <span> . </span> 60 Centuries
                                     </p>
-                                    <a href="#" class="btn px-5 py-2 w-75 select-btn">Select</a>
+                                    <button href="#" class="btn px-5 py-2 w-75 select-btn" id="">
+                                        Select
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +150,9 @@
                                     <p class="card-text">
                                         25000 Runs <span> . </span> 30 Centuries
                                     </p>
-                                    <a href="#" class="btn px-5 py-2 w-75 select-btn">Select</a>
+                                    <button href="#" class="btn px-5 py-2 w-75 select-btn" id="">
+                                        Select
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +170,9 @@
                                     <p class="card-text">
                                         60000 Runs <span> . </span> 37 Centuries
                                     </p>
-                                    <a href="#" class="btn px-5 py-2 w-75 select-btn">Select</a>
+                                    <button href="#" class="btn px-5 py-2 w-75 select-btn" id="">
+                                        Select
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -181,7 +190,9 @@
                                     <p class="card-text">
                                         15000 Runs <span> . </span> 20 Centuries
                                     </p>
-                                    <a href="#" class="btn px-5 py-2 w-75 select-btn">Select</a>
+                                    <button href="#" class="btn px-5 py-2 w-75 select-btn" id="">
+                                        Select
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -189,16 +200,11 @@
 
                     <!-- Calculation Section -->
                     <div class="col-lg-3 row">
+                        <!-- Player List Box -->
                         <div class="cols-12 gy-3">
                             <div class="card bg-black p-3 text-center">
                                 <h1 class="selected-heading">Selected-V</h1>
-                                <ol class="text-white fs-5">
-                                    <li class="mb-4">Shakib Al Hasan</li>
-                                    <li class="mb-4"></li>
-                                    <li class="mb-4"></li>
-                                    <li class="mb-4"></li>
-                                    <li class=""></li>
-                                </ol>
+                                <ol class="text-white fs-5 text-end" id="selected-player-list"></ol>
                             </div>
                         </div>
                         <div class="cols-12 gy-3">
@@ -218,9 +224,13 @@
                                 </div>
                                 <!-- Player Budget Calculate button -->
                                 <div>
-                                    <a href="#" class="btn py-1 w-100 mt-3" id="player-budget-btn"
-                                        >Calculate</a
+                                    <button
+                                        href="#"
+                                        class="btn py-1 w-100 mt-3"
+                                        id="player-budget-btn"
                                     >
+                                        Calculate
+                                    </button>
                                 </div>
 
                                 <!-- player expense -->
@@ -255,9 +265,13 @@
                                 </div>
                                 <!-- Total Calculate Button -->
                                 <div>
-                                    <a href="#" class="btn py-1 w-100 mt-3" id="total-budget-btn"
-                                        >Calculate Total</a
+                                    <button
+                                        href="#"
+                                        class="btn py-1 w-100 mt-3"
+                                        id="total-budget-btn"
                                     >
+                                        Calculate Total
+                                    </button>
                                 </div>
                                 <!-- Total Expense -->
                                 <div class="text-white fs-5 mt-3 d-flex justify-content-between">
@@ -294,5 +308,6 @@
         <script src="js/utility.js"></script>
         <script src="js/expense.js"></script>
         <script src="js/notification-close.js"></script>
+        <script src="js/player-selection.js"></script>
     </body>
 </html>
