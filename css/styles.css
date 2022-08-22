@@ -1,0 +1,23 @@
+/* Common Styles */
+body {
+    background-color: #151515;
+    margin: 0;
+    padding: 0;
+}
+/* Top Banner Section */
+#top-banner {
+    width: 100%;
+    background-color: black;
+    height: auto;
+}
+.banner {
+}
+
+.banner-heading {
+    font-family: "Lobster Two", cursive;
+    color: #d8ad01;
+    font-size: 3em;
+}
+.banner-description {
+    color: white;
+}
