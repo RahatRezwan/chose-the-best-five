@@ -189,7 +189,7 @@
 
                     <!-- Calculation Section -->
                     <div class="col-lg-3 row">
-                        <div class="cols-12 g-3">
+                        <div class="cols-12 gy-3">
                             <div class="card bg-black p-3 text-center">
                                 <h1 class="selected-heading">Selected-V</h1>
                                 <ol class="text-white fs-5">
@@ -201,7 +201,7 @@
                                 </ol>
                             </div>
                         </div>
-                        <div class="cols-12 g-3">
+                        <div class="cols-12 gy-3">
                             <div class="card bg-black p-3 text-center text-white">
                                 <!-- player budget -->
                                 <h1 class="selected-heading">Budget</h1>
@@ -209,7 +209,12 @@
                                     class="d-flex justify-content-between align-items-center text-white"
                                 >
                                     <p class="m-0">Per Player</p>
-                                    <input class="" type="text" name="" id="player-budget" />
+                                    <input
+                                        class="input-budget"
+                                        type="text"
+                                        name=""
+                                        id="player-budget"
+                                    />
                                 </div>
                                 <div>
                                     <a href="#" class="btn py-1 w-100 mt-3" id="player-budget-btn"
@@ -220,7 +225,43 @@
                                 <!-- player expense -->
                                 <div class="text-white fs-5 mt-3 d-flex justify-content-between">
                                     <p>Player Expenses</p>
-                                    <p>$ <span>0</span></p>
+                                    <p>$ <span class="total" id="player-expense">0</span></p>
+                                </div>
+
+                                <!-- Manager and Coach Budget -->
+                                <div
+                                    class="d-flex justify-content-between align-items-center text-white mb-3"
+                                >
+                                    <p class="m-0">Manager</p>
+                                    <input
+                                        class="input-budget"
+                                        type="text"
+                                        name=""
+                                        id="manager-budget"
+                                    />
+                                </div>
+                                <!-- Coach Budget -->
+                                <div
+                                    class="d-flex justify-content-between align-items-center text-white mb-3"
+                                >
+                                    <p class="m-0">Coatch</p>
+                                    <input
+                                        class="input-budget"
+                                        type="text"
+                                        name=""
+                                        id="coach-budget"
+                                    />
+                                </div>
+                                <!-- Total Calculate Button -->
+                                <div>
+                                    <a href="#" class="btn py-1 w-100 mt-3" id="total-budget-btn"
+                                        >Calculate Total</a
+                                    >
+                                </div>
+                                <!-- Total Expense -->
+                                <div class="text-white fs-5 mt-3 d-flex justify-content-between">
+                                    <p>Total</p>
+                                    <p>$ <span class="total" id="total-expense">0</span></p>
                                 </div>
                             </div>
                         </div>

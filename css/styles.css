@@ -46,12 +46,15 @@ body {
     font-size: 1.7em;
 }
 
-#player-budget {
+.input-budget {
     border: 1px solid #d8ad01;
     background-color: transparent;
     color: white;
 }
-#player-budget:focus {
+.input-budget:focus {
     outline: none;
     border-color: #d8ad01;
+}
+.total {
+    color: #d8ad01;
 }
