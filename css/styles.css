@@ -4,13 +4,20 @@ body {
     margin: 0;
     padding: 0;
 }
+.btn {
+    background-color: #d8ad01;
+    color: White;
+    border: none;
+    font-size: 1.2em;
+}
+.btn:hover {
+    border: 1px solid #d8ad01;
+}
 /* Top Banner Section */
 #top-banner {
     width: 100%;
     background-color: black;
     height: auto;
-}
-.banner {
 }
 
 .banner-heading {
@@ -20,4 +27,9 @@ body {
 }
 .banner-description {
     color: white;
+}
+
+/* Select Card Section */
+.player-card {
+    background-color: black;
 }
