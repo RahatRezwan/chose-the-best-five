@@ -12,6 +12,10 @@ body {
 }
 .btn:hover {
     border: 1px solid #d8ad01;
+    color: white;
+}
+.container-xxl {
+    max-width: 1400px;
 }
 /* Top Banner Section */
 #top-banner {
@@ -21,7 +25,7 @@ body {
 }
 
 .banner-heading {
-    font-family: "Lobster Two", cursive;
+    font-family: "DynaPuff", cursive;
     color: #d8ad01;
     font-size: 3em;
 }
@@ -29,7 +33,25 @@ body {
     color: white;
 }
 
-/* Select Card Section */
+/* Player Card Section */
 .player-card {
     background-color: black;
+}
+
+/* Calculation Section */
+
+.selected-heading {
+    font-family: "DynaPuff", cursive;
+    color: #d8ad01;
+    font-size: 1.7em;
+}
+
+#player-budget {
+    border: 1px solid #d8ad01;
+    background-color: transparent;
+    color: white;
+}
+#player-budget:focus {
+    outline: none;
+    border-color: #d8ad01;
 }
