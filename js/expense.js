@@ -6,7 +6,7 @@ document.getElementById("player-budget-btn").addEventListener("click", function 
     //Validation
     if (isNaN(perPlayerBudget) === true) {
         let warningText = getInnerTextById("warning-text");
-        warningText.innerText = "Please Enter a Number";
+        warningText.innerText = "Please Enter Numbers In The Input Field";
         document.getElementById("notification-container").classList.add("show");
     } else {
         //Set Total Player Expense for 5 players
@@ -31,7 +31,7 @@ document.getElementById("total-budget-btn").addEventListener("click", function (
         isNaN(totalCoachExpense) === true
     ) {
         let warningText = getInnerTextById("warning-text");
-        warningText.innerText = "Please Enter a Number";
+        warningText.innerText = "Please Enter Numbers In The Input Field";
         document.getElementById("notification-container").classList.add("show");
     } else {
         //set total expense value
