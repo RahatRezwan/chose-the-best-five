@@ -1,6 +1,7 @@
 //get value of an element
 function getElementsValueUsingId(elementId) {
     const element = document.getElementById(elementId);
+    console.log(element.value);
     const elementValue = parseInt(element.value);
     element.value = "";
     return elementValue;

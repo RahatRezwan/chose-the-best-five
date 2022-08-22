@@ -63,3 +63,20 @@ body {
 .total {
     color: #d8ad01;
 }
+
+/* Notification Seciton */
+#notification-container {
+    background-color: rgba(151, 147, 147, 0.459);
+    opacity: 0;
+    pointer-events: none;
+}
+#notification-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+.notification {
+    width: 600px;
+    max-width: 100%;
+    padding: 3% 4%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

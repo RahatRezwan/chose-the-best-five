@@ -269,6 +269,19 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Modal Section -->
+            <section
+                id="notification-container"
+                class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            >
+                <div class="notification text-center text-white bg-black rounded">
+                    <h1 class="text-warning">Warning!!</h1>
+                    <hr />
+                    <h4 id="warning-text">warning</h4>
+                    <button class="btn mt-3" id="close">Close</button>
+                </div>
+            </section>
         </main>
         <!-- Bootstrap 5 JS Link -->
         <script
@@ -280,5 +293,6 @@
         <!-- JS Files -->
         <script src="js/utility.js"></script>
         <script src="js/expense.js"></script>
+        <script src="js/notification-close.js"></script>
     </body>
 </html>
